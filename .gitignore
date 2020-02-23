@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#Recipe api
+.env
+
 # production
 /build
 
