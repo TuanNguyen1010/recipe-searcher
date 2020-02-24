@@ -9,7 +9,8 @@ My fun little recipe project will be able to find recipes based on a search of 1
 <h2> Prerequisites</h2>
 
 <ul>
-<li> Clone this repository with git clone git@github.com:TuanNguyen1010/recipe-searcher.git <li>
-Change into the folder with cd recipe-searcher
-Install all the dependencies with npm install
-Open the local server with npm start
+<li> Clone this repository with git clone git@github.com:TuanNguyen1010/recipe-searcher.git </li>
+<li> Change into the folder with cd recipe-searcher </li>
+<li>Install all the dependencies with npm install </li>
+<li> Open the local server with npm start</li>
+</ul>
