@@ -7,6 +7,7 @@ import Recipe from './Recipe'
 const App = () => {
 
   const [recipes, setRecipe] = useState([]);
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
   fetchRecipe()
@@ -20,11 +21,18 @@ const App = () => {
     console.log(response.hits)
   }
   
+  const newSearch = e => {
+    setSearch(e.target.value)
+  }
+
   return (
       < div className="MainApp" >
     <h1> Hello world </h1>
     <form className="search-form">  
-      <input className="search-input" type ="text" />
+      <input className="search-input" 
+      type ="text" 
+      value={search} 
+      onChange={newSearch}/>
       <button
       className="search-button" 
       type="submit"
