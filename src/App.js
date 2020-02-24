@@ -7,7 +7,6 @@ import Recipe from './Recipe'
 const App = () => {
 
   const [recipes, setRecipe] = useState([]);
-  const [search, setSearch] = useState("")
 
   useEffect(() => {
   fetchRecipe()
@@ -34,7 +33,11 @@ const App = () => {
       </button>
     </form>
     {recipes.map(recipe => (
-      <Recipe title={recipe.recipe.label} calories={recipe.recipe.calories}/>
+      <Recipe 
+      title={recipe.recipe.label} 
+      calories={recipe.recipe.calories} 
+      image={recipe.recipe.image}
+      />
 
     ))}
     </div>
